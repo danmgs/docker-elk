@@ -9,6 +9,7 @@ services:
         ELK_VERSION: $ELK_VERSION
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+      - ./elasticsearch/data:/usr/share/elasticsearch/data
     ports:
       - "9200:9200"
       - "9300:9300"
@@ -25,10 +26,14 @@ services:
         ELK_VERSION: $ELK_VERSION
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./logstash/data/plugins/inputs/file:/usr/share/logstash/data/plugins/inputs/file
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+      - ./logstash/custom/templates/custom-elasticsearch-template.json:/usr/share/logstash/custom/templates/custom-elasticsearch-template.json:ro
+      - ./logstash/custom/data-samples:/usr/share/logstash/custom/data-samples
     ports:
       - "5000:5000"
       - "9600:9600"
+      - "5960:5960"
     environment:
       LS_JAVA_OPTS: "-Xmx256m -Xms256m"
     networks:
@@ -43,6 +48,7 @@ services:
         ELK_VERSION: $ELK_VERSION
     volumes:
       - ./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
+      - ./kibana/data:/usr/share/kibana/data
     ports:
       - "5601:5601"
     networks:
