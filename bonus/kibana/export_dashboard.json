@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "f5618bf0-bc7f-11e9-ba26-9158ef987dc8",
+    "_type": "dashboard",
+    "_source": {
+      "title": "My Dashboard with stored time",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"panelIndex\":\"1\",\"gridData\":{\"x\":0,\"y\":0,\"w\":5,\"h\":7,\"i\":\"1\"},\"id\":\"95e16a70-bc7e-11e9-ba26-9158ef987dc8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"2\",\"gridData\":{\"x\":5,\"y\":0,\"w\":7,\"h\":7,\"i\":\"2\"},\"id\":\"6f846d20-bc86-11e9-ba26-9158ef987dc8\",\"type\":\"visualization\",\"version\":\"6.1.1\"},{\"panelIndex\":\"3\",\"gridData\":{\"x\":0,\"y\":7,\"w\":6,\"h\":3,\"i\":\"3\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"eb803bc0-bc86-11e9-ba26-9158ef987dc8\"},{\"panelIndex\":\"4\",\"gridData\":{\"x\":6,\"y\":7,\"w\":6,\"h\":3,\"i\":\"4\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"f965f900-bc86-11e9-ba26-9158ef987dc8\"},{\"panelIndex\":\"5\",\"gridData\":{\"x\":0,\"y\":10,\"w\":12,\"h\":3,\"i\":\"5\"},\"version\":\"6.1.1\",\"type\":\"visualization\",\"id\":\"1b6dd360-bc87-11e9-ba26-9158ef987dc8\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "uiStateJSON": "{}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-5y",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]
